@@ -1,1 +1,27 @@
-puts 'fuck you world'
+41.times do
+  print 'Ruby, '
+end
+puts 'Ruby! NaNaaNaNaaNaNaaaa'
+
+number = rand(100)
+guess = nil
+
+puts 'Welcome to the guessing game!'
+
+while guess != number do
+  print 'Enter your guess: '
+  guess = gets.to_i
+
+  print "Your guess of #{guess} "
+
+  if guess > number
+    print 'is too high'
+  elsif guess < number
+    print 'is too low'
+  else
+    print 'is exactly right! Congratulations!'
+  end
+
+  print "\n"
+end
+
