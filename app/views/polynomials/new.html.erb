@@ -1,0 +1,12 @@
+<h1>Post a comment:</h1>
+
+<%= form_tag "/comments", method: :post do %>
+  <%= hidden_tag(param, "#{param}:") %>
+
+  <p>
+    <%= label_tag(:content, "Comment:") %>
+    <%= text_area_tag(:content) %>
+  </p>
+
+  <button type="submit">Solve!</button>
+<% end %>
